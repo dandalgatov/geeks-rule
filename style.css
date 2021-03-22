@@ -1,0 +1,183 @@
+body {
+  all: initial;
+  width: 100vw;
+  /* box-sizing: border-box; */
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url(./assets/header-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+  /* background-color: rgba(0,0,0,.3); */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#desktop-menu {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.donate-btn {
+  background-color: #00a651;
+  border: none;
+  box-shadow: none;
+  border-radius: 6px;
+  line-height: 1.25em;
+  padding: 4px 1em 4px 1em;
+}
+
+#hero {
+
+  height: 90%;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+#hero-text {
+    max-width: 1170px
+}
+
+#about {
+  /* height: 40px; */
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#about-text {
+  width: 66.666%;
+  /* background-color: aqua; */
+}
+
+#about-vid {
+  width: 33.333%;
+  background-color: red;
+  /* padding: 100px 10%; */
+}
+
+#programs {
+  background-image: url(./assets/programs-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  color: white;
+  text-align: center;
+}
+
+#programs-header {
+  height: 50%;
+}
+
+#programs-list {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50%;
+}
+
+.program {
+  width: 25%;
+}
+
+.fa-user,
+.fa-weixin,
+.fa-graduation-cap,
+.fa-handshake-o {
+  color: #fec96b;
+}
+
+.learn-more-btn {
+  background-color: #00a651;
+  border: none;
+  box-shadow: none;
+  border-radius: 6px;
+  line-height: 1.25em;
+  padding: 4px 1em 4px 1em;
+}
+
+#events,
+#sponsors {
+  text-align: center;
+}
+
+#events-call-to-action {
+  background-color: #00a651;
+}
+
+#sponsors-logos {
+  width: 15%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#donate {
+  background-image: url(./assets/donate-background.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+}
+
+#about-vid {
+  background-image: url(./assets/about-vid-background.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center center;
+  background-size: cover;
+  /* padding: 100px 10%; */
+    box-sizing: border-box;
+  width: 33.333%;
+
+}
+
+.green-divider {
+  border: 1px solid #00a651;
+  width: 200px;
+}
+
+iframe {
+  max-width: 80%;
+  max-height: 400px;
+  margin: 100px 10%;
+  height: 70%;
+  
+}
+
+
+h3 {
+    color: #262e44;
+    font-family: Montserrat, sans-serif;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 72px;
+}
+
+p {
+   color: #5c6668;
+   font-size: 16px;
+   line-height: 36px;
+   font-family: 'Raleway', sans-serif;
+}
