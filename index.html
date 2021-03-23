@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width" />
     <script src="https://use.fontawesome.com/be978080a7.js"></script>
     <script defer src="app.js" charset="utf-8"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="style.css"
@@ -23,21 +33,23 @@
   <body>
     <header>
       <nav>
-        <img src=./assets/logo-mobile.png alt='logo' style='height:auto;'/>
+        <img id='logo' src=./assets/logos/desktop.png alt='logo' />
         <ul id="desktop-menu">
-          <li><a>ABOUT</a></li>
-          <li><a>PROGRAMS</a></li>
-          <li><a>EVENTS</a></li>
-          <li><a>CONTACT</a></li>
+          <li><a href='#about'>ABOUT</a></li>
+          <li><a href='#programs'>PROGRAMS</a></li>
+          <li><a href='#events'>EVENTS</a></li>
+          <li><a href='#footer'>CONTACT</a></li>
           <li>
-            <button class="donate-btn">🤍 DONATE</button>
+            <a href='#donate'><button class="donate-btn">🤍 DONATE</button></a>
           </li>
         </ul>
+        <i id='mobile-menu' class="fa fa-bars"></i>
+
       </nav>
       <div id="hero">
         <div id="hero-text">
           <h1>MAKE A DIFFERENCE</h1>
-          <h3 style='color:white; font-size: 22px'>
+          <h3 style="color: white; font-size: 22px">
             Geeks Rule has reached over 8,000 underserved students with content
             and programming that increase interest and proficiency in STEM
           </h3>
@@ -46,18 +58,34 @@
     </header>
     <section id="about">
       <div id="about-text">
-        <h3>Preparing Tomorrow’s STEM Leaders Today</h3>
-        <div class='green-divider'></div>
-        <p>Geeks Rule, a 501(c)(3) nonprofit organization, was established to eliminate racial, gender and socioeconomic gaps that exist in STEM through programming at underserved secondary schools.</p>
+        <h3 style="color: #262e44">Preparing Tomorrow’s STEM Leaders Today</h3>
+        <div class="separator"></div>
+        <p style="color: rgb(92, 102, 104)">
+          Geeks Rule, a 501(c)(3) nonprofit organization, was established to
+          eliminate racial, gender and socioeconomic gaps that exist in STEM
+          through programming at underserved secondary schools.
+        </p>
+        <div id="about-action">
+          <button class="donate-btn">Learn More</button>
+          <button class="donate-btn">🤍 Donate</button>
+        </div>
       </div>
       <div id="about-vid">
-        <iframe width="100%" height="330" src="https://www.youtube.com/embed/i6Q8wLENB3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          width="100%"
+          height="330"
+          src="https://www.youtube.com/embed/i6Q8wLENB3k"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
     <section id="programs">
-      <div id='programs-header'>
+      <div id="programs-header">
         <h2>OUR STEM PROGRAMS</h2>
-        <p>Utilizing a Unique Funnel Approach</p>
+        <div class="separator" style="margin: 0 auto"></div>
+        <p style="font-size: 24px">Utilizing a Unique Funnel Approach</p>
       </div>
       <div id="programs-list">
         <div class="program">
@@ -70,7 +98,7 @@
             variety of fields to speak in front of middle and high school
             classes.
           </p>
-          <button class='learn-more-btn'>Learn More</button>
+          <button class="learn-more-btn">Learn More</button>
         </div>
         <div class="program">
           <div>
@@ -78,9 +106,11 @@
             <h2>Geek for a Day</h2>
           </div>
           <p>
-            We provide exposure by taking students to visit corporate and nonprofit STEM organizations where they observe STEM professionals in the field.
+            We provide exposure by taking students to visit corporate and
+            nonprofit STEM organizations where they observe STEM professionals
+            in the field.
           </p>
-          <button class='learn-more-btn'>Learn More</button>
+          <button class="learn-more-btn">Learn More</button>
         </div>
         <div class="program">
           <div>
@@ -88,9 +118,11 @@
             <h2>After School</h2>
           </div>
           <p>
-            We increase enthusiasm and proficiency across a variety of STEM fields through problem-based learning (PBL) activities that are fun and educational.
+            We increase enthusiasm and proficiency across a variety of STEM
+            fields through problem-based learning (PBL) activities that are fun
+            and educational.
           </p>
-          <button class='learn-more-btn'>Learn More</button>
+          <button class="learn-more-btn">Learn More</button>
         </div>
         <div class="program">
           <div>
@@ -98,63 +130,79 @@
             <h2>Mentor Program</h2>
           </div>
           <p>
-            Students select a field-specific afterschool club through which they build proficiency and direction with the help of one-to-one mentoring.
+            Students select a field-specific afterschool club through which they
+            build proficiency and direction with the help of one-to-one
+            mentoring.
           </p>
-          <button class='learn-more-btn'>Learn More</button>
+          <button class="learn-more-btn">Learn More</button>
         </div>
       </div>
     </section>
     <section id="events">
-      <div id='events-header'>
-        <h1>UPCOMING EVENTS</h1>
-        <h2>Contact us if you would like to schedule our Speaker Series or Geek-for-a-Day Program…</h2>
-        <p>or if you wish to offer our STEM afterschool program to your students.</p>
-        <img src="./assets/events-hero.png" alt="">
-        <div id='events-call-to-action'>
-          <h1>VIEW ALL OUR EVENTS</h1>
-        </div>
+      <div id="events-header">
+        <h2>UPCOMING EVENTS</h2>
+        <p style="color: black; font-size: 24px; font-weight: 300">
+          Contact us if you would like to schedule our Speaker Series or
+          Geek-for-a-Day Program…
+        </p>
+        <p>
+          or if you wish to offer our STEM afterschool program to your students.
+        </p>
+        <img src="./assets/events-hero.png" alt="" />
+      </div>
+      <div id="events-call-to-action">
+        <span>VIEW ALL OUR EVENTS</span>
       </div>
     </section>
     <section id="sponsors">
-      <h1>WE APPRECIATE OUR SPONSORS</h1>
+      <h2 style="color: #262e44">WE APPRECIATE OUR SPONSORS</h2>
       <div id="sponsors-logos">
-        <img src="./assets/sponsor1.png" alt="Teachers College Columbia University">
-        <img src="./assets/sponsor2.png" alt="Scholastic">
-        <img src="./assets/sponsor3.png" alt="Public Service Enterprise Group">
-        <img src="./assets/sponsor4.png" alt="New York University">
-        <img src="./assets/sponsor5.png" alt="IBM">
-        <img src="./assets/sponsor6.png" alt="Best Buy">
-        <img src="./assets/sponsor7.png" alt="National Grid">
-        <!-- <img src="./assets/sponsor8.png" alt="Argo Group">
-        <img src="./assets/sponsor9.png" alt="Dicerna Pharmaceutical">
-        <img src="./assets/sponsor10.png" alt="Tech Dad">
-        <img src="./assets/sponsor11.png" alt="Hireix">
-        <img src="./assets/sponsor12.png" alt="Andrew Davidson & Co.">
-        <img src="./assets/sponsor13.png" alt="Smith Seckman Reid Inc.">
-        <img src="./assets/sponsor14.png" alt="Quartus Engineering">
-        <img src="./assets/sponsor15.png" alt="Athena Health"> -->
+        <img
+          src="./assets/sponsors/1.png"
+          alt="Teachers College Columbia University"
+        />
+        <img src="./assets/sponsors/2.png" alt="Scholastic" />
+        <img
+          src="./assets/sponsors/3.png"
+          alt="Public Service Enterprise Group"
+        />
+        <img src="./assets/sponsors/4.png" alt="New York University" />
+        <img src="./assets/sponsors/5.png" alt="IBM" />
+        <img src="./assets/sponsors/6.png" alt="Best Buy" />
+        <img src="./assets/sponsors/7.png" alt="National Grid" />
+        <!-- <img src="./assets/sponsors/8.png" alt="Argo Group">
+        <img src="./assets/sponsors/9.png" alt="Dicerna Pharmaceutical">
+        <img src="./assets/sponsors/10.png" alt="Tech Dad">
+        <img src="./assets/sponsors/11.png" alt="Hireix">
+        <img src="./assets/sponsors/12.png" alt="Andrew Davidson & Co.">
+        <img src="./assets/sponsors/13.png" alt="Smith Seckman Reid Inc.">
+        <img src="./assets/sponsors/14.png" alt="Quartus Engineering">
+        <img src="./assets/sponsors/15.png" alt="Athena Health"> -->
       </div>
     </section>
     <section id="donate">
-      <div id='donate-text'>
-        <h1>CHANGE A LIFE TODAY</h1>
-        <p>Help us help the children. Get in touch today and start making a difference.</p>
-        <button>VOLUNTEER</button>
+      <div id="donate-text">
+        <h2>CHANGE A LIFE TODAY</h2>
+        <div class="separator"></div>
+        <p style="font-size: 24px">
+          Help us help the children. Get in touch today and start making a
+          difference.
+        </p>
+        <button id="volunteer-btn">VOLUNTEER</button>
         <!-- <button>START A FUNDRAISER</button> -->
       </div>
-      <div id='donate-widget'>
-        
-      </div>
+      <div id="donate-widget"></div>
     </section>
-    <footer>
-      <div id='copyright'>
-        © Copyright 2014 - 2021 GEEKS RULE INC., a 501(c)(3) nonprofit organization 
+    <footer id='footer'>
+      <div id="copyright">
+        © Copyright 2014 - 2021 GEEKS RULE INC., a 501(c)(3) nonprofit
+        organization
       </div>
-      <div id='links'>
-        <i class="fa far fa-envelope "></i>
+      <div id="links">
+        <i class="fa far fa-envelope"></i>
         <i class="fa fa-facebook-f"></i>
         <i class="fa fa-twitter"></i>
-        <i class="fa fa-linkedin-in"></i>
+        <i class="fa fa-linkedin"></i>
       </div>
     </footer>
   </body>

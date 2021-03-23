@@ -1,24 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   all: initial;
   width: 100vw;
-  /* box-sizing: border-box; */
 }
 
 header {
   height: 100vh;
   width: 100%;
+  background-image: url(./assets/backgrounds/header.jpg);
+}
+
+header, #programs, .learn-more-btn, #events, #sponsors, footer {
   text-align: center;
-  background-image: url(./assets/header-background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 nav {
-  /* background-color: rgba(0,0,0,.3); */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  padding: 0 4%;
+  line-height: 36px;
+  height: 150px;
+}
+
+#logo {
+  max-height: 36px;
+  margin: auto 0;
+}
+
+#desktop-menu a {
+  all: initial;
+  font-size: 15px;
+}
+
+.learn-more-btn,
+#events-call-to-action,
+#desktop-menu a {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
 }
 
 #desktop-menu {
@@ -27,20 +53,39 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 750px;
 }
 
-.donate-btn {
+#mobile-menu {
+  display:none;
+}
+
+.donate-btn, .learn-more-btn, #events-call-to-action {
   background-color: #00a651;
   border: none;
   box-shadow: none;
+  color: white;
+}
+
+
+.learn-more-btn {
+  line-height: .1em;
+  min-width: 100px;
+  height: 17px;
+  padding: 15px 29px;
+}
+
+
+.donate-btn {
   border-radius: 6px;
-  line-height: 1.25em;
-  padding: 4px 1em 4px 1em;
+  height: 48px;
+  width: 130px;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor: pointer;
 }
 
 #hero {
-
   height: 90%;
   color: white;
   display: grid;
@@ -48,34 +93,33 @@ nav {
 }
 
 #hero-text {
-    max-width: 1170px
+  padding-bottom: 15%;
+  max-width: 1170px;
+}
+
+#hero-text > h1 {
+  margin: 0;
 }
 
 #about {
-  /* height: 40px; */
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 #about-text {
-  width: 66.666%;
-  /* background-color: aqua; */
+  padding: 100px 10%;
 }
 
-#about-vid {
-  width: 33.333%;
-  background-color: red;
-  /* padding: 100px 10%; */
+#about-text button {
+  margin-left: 25px;
 }
 
 #programs {
-  background-image: url(./assets/programs-background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 700px;
+  background-image: url(./assets/backgrounds/programs.jpg);
+  height: auto;
   color: white;
-  text-align: center;
+  padding: 50px;
 }
 
 #programs-header {
@@ -97,24 +141,26 @@ nav {
 .fa-graduation-cap,
 .fa-handshake-o {
   color: #fec96b;
+  font-size: 70px;
 }
 
-.learn-more-btn {
-  background-color: #00a651;
-  border: none;
-  box-shadow: none;
-  border-radius: 6px;
-  line-height: 1.25em;
-  padding: 4px 1em 4px 1em;
+
+
+#events-header {
+  width: 65%;
+  margin: 0 auto;
 }
 
-#events,
-#sponsors {
-  text-align: center;
+#events-header  img {
+ width: 65%;
 }
 
 #events-call-to-action {
-  background-color: #00a651;
+
+  font-size: 18px;
+  text-transform: none;
+  padding: 70px;
+  margin: 100px 0;
 }
 
 #sponsors-logos {
@@ -125,59 +171,139 @@ nav {
 }
 
 #donate {
-  background-image: url(./assets/donate-background.jpg);
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-image: url(./assets/backgrounds/donate.jpg);
   background-position: center center;
   background-size: cover;
   height: 500px;
+  color: white;
+}
+
+#donate-text {
+  width: 40%;
+  padding: 5%;
+}
+
+#volunteer-btn {
+  all: initial;
+  background: rgba(254, 201, 107, 0);
+  border: 2px solid white;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: none;
+  padding: 13px 29px;
+  cursor: pointer;
 }
 
 #about-vid {
-  background-image: url(./assets/about-vid-background.jpg);
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-position: center center;
-  background-size: cover;
-  /* padding: 100px 10%; */
-    box-sizing: border-box;
-  width: 33.333%;
-
+  background-image: url(./assets/backgrounds/about-vid.jpg);
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
 }
 
-.green-divider {
-  border: 1px solid #00a651;
+.separator {
+  border: 1.5px solid #00a651;
   width: 200px;
+  margin-bottom: 40px;
 }
 
 iframe {
   max-width: 80%;
-  max-height: 400px;
-  margin: 100px 10%;
-  height: 70%;
-  
+  /* max-height: 400px; */
+  /* margin: 100px 10%; */
+  height: auto;
+  padding: 100px 10%;
+  min-height: 250px;
 }
 
-
-h3 {
-    color: #262e44;
-    font-family: Montserrat, sans-serif;
-    font-size: 26px;
+h1, h2, h3 {
+  font-family: Montserrat, sans-serif;
 }
-
-h2 {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-}
-
-h1 {
-    font-family: Montserrat, sans-serif;
-    font-size: 72px;
-}
+h3 { font-size: 26px;}
+h2 { font-size: 36px;}
+h1 { font-size: 72px;}
 
 p {
-   color: #5c6668;
-   font-size: 16px;
-   line-height: 36px;
-   font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+header,
+#programs,
+#about-vid {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer {
+  padding: 20px 30px;
+  color: #b2b7b8;
+  font-size: 10px;
+}
+
+footer #links {
+  color: #00a651;
+  border-radius: 60px;
+  background-color: #ffffff;
+  font-size: 23px;
+  padding: 20px;
+}
+
+
+.fa-envelope,
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin {
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #desktop-menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+    color: white;
+    margin: auto 0;
+    font-size: 22px;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #programs-list {
+    flex-flow: column nowrap;
+    margin: 0 auto;
+  }
+
+  .program {
+    width: 50%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  #donate-text {
+    width: 100%;
+    padding: 5%;
+  }
+
+  #events-header  img {
+    width: 100%;
+   }
+
+   h3 { font-size: 13px;}
+h2 { font-size: 18px;}
+h1 { font-size: 36px;}
 }
